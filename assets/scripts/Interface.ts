@@ -1,5 +1,8 @@
+// 鱼的类型属性
 export interface FishType {
-    name: string
+    name: string,
+    hp: number,
+    gold: number
 }
 
 /** 导出事件名称枚举 */

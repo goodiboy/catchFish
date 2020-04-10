@@ -4,11 +4,7 @@ import MyGlobal from "../MyGlobal";
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class NewClass extends cc.Component {
-    
-    //炮台图集
-    @property(cc.SpriteAtlas)
-    weaponAtlas: cc.SpriteAtlas = null;
+export default class Weapon extends cc.Component {
 
     protected onLoad(): void {
         cc.director.on(MyEvent.TOUCHEND_SHOOT, e => {
@@ -23,7 +19,7 @@ export default class NewClass extends cc.Component {
             MyGlobal.weaponLevel = 7;
             return;
         }
-        this.getComponent(cc.Sprite).spriteFrame = this.weaponAtlas.getSpriteFrame('weapon_level_' + MyGlobal.weaponLevel + '_1');
+        this.getComponent(cc.Sprite).spriteFrame = MyGlobal.GameManager.weaponAtlas.getSpriteFrame('weapon_level_' + MyGlobal.weaponLevel + '_1');
     }
 
     // 武器降级
@@ -33,6 +29,6 @@ export default class NewClass extends cc.Component {
             MyGlobal.weaponLevel = 1
             return;
         }
-        this.getComponent(cc.Sprite).spriteFrame = this.weaponAtlas.getSpriteFrame('weapon_level_' + MyGlobal.weaponLevel + '_1')
+        this.getComponent(cc.Sprite).spriteFrame = MyGlobal.GameManager.weaponAtlas.getSpriteFrame('weapon_level_' + MyGlobal.weaponLevel + '_1')
     }
 }
