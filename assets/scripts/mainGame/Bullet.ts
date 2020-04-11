@@ -25,6 +25,7 @@ export default class Bullet extends cc.Component {
      * @param angle 炮弹的角度
      */
     public init(angle: number): void {
+        MyGlobal.bulletCount++;
         this.direction = 1;
         this.bounceCount = 2;
 
@@ -52,6 +53,8 @@ export default class Bullet extends cc.Component {
         const net: cc.Node = Utils.getPoolNode(MyGlobal.GameManager.netPool, MyGlobal.GameManager.netPrefab);
         net.parent = MyGlobal.GameManager.fishLayer;
         net.getComponent(Net).init(this.node.getPosition());
+        MyGlobal.bulletCount--;
+        MyGlobal.GameManager.testGameOver();
     }
 
     protected update(dt: number): void {
@@ -84,12 +87,14 @@ export default class Bullet extends cc.Component {
         // 好处屏幕之后回收炮弹
         if ((Math.abs(dx) - cc.winSize.width / 2 > 100) || (Math.abs(dy) - cc.winSize.height / 2 > 100)) {
             Utils.putPoolNode(this.node, MyGlobal.GameManager.bulletPool);
+            MyGlobal.bulletCount--;
+            MyGlobal.GameManager.testGameOver();
         }
     }
 
     // 获取炮弹的伤害
     public getHurt(): number {
-        let hurt = MyGlobal.weaponLevel * 4;
+        let hurt = MyGlobal.weaponLevel * 2;
         return Math.ceil(Math.random() * hurt + MyGlobal.weaponLevel);
     }
 }

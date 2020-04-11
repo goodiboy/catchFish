@@ -3,6 +3,8 @@ import {MyEvent, FishType} from "../Interface";
 import Utils from "../Utils";
 import Bullet from "./Bullet";
 import MyGlobal from "../MyGlobal";
+import CoinUp from "./CoinUp";
+import Gold from "./Gold";
 
 const {ccclass, property} = cc._decorator;
 
@@ -41,6 +43,15 @@ export default class GameManager extends cc.Component {
     @property(cc.SpriteAtlas)
     fishAtlas: cc.SpriteAtlas = null;
 
+    // 金币的预制体
+    @property(cc.Prefab)
+    goldPrefab: cc.Prefab = null;
+
+    // 当前拥有多少金币
+    @property(cc.Node)
+    numControlNode: cc.Node = null;
+
+
     // 鱼的对象池
     public fishPool: cc.NodePool = new cc.NodePool();
 
@@ -53,8 +64,14 @@ export default class GameManager extends cc.Component {
     // 分数的对象池
     public coinUpPool: cc.NodePool = new cc.NodePool();
 
+    // 金币对象池
+    public goldPool: cc.NodePool = new cc.NodePool()
+
 
     protected onLoad(): void {
+        // 初始化数据
+        MyGlobal.init();
+
         const manager: cc.CollisionManager = cc.director.getCollisionManager();
         manager.enabled = true;
         // manager.enabledDebugDraw = true;
@@ -75,6 +92,7 @@ export default class GameManager extends cc.Component {
      * @param angle 炮弹的角度
      */
     public fireBullet(angle): void {
+        MyGlobal.NumControl.setGoldNum(MyGlobal.hasGold -= MyGlobal.weaponLevel);
         const bullet: cc.Node = Utils.getPoolNode(this.bulletPool, this.bulletPrefab);
         bullet.parent = this.fishLayer;
         bullet.getComponent(Bullet).init(angle);
@@ -95,17 +113,26 @@ export default class GameManager extends cc.Component {
     }
 
     // 创建获得的分数值
-    public createCoinUp(pos: cc.Vec2): void {
+    public createCoinUp(pos: cc.Vec2, fishType: FishType): void {
         const coinUp: cc.Node = Utils.getPoolNode(this.coinUpPool, this.coinUpPrefab);
         coinUp.parent = this.fishLayer;
-        coinUp.setPosition(pos);
-        // 此处使用tween更简单
-        const wrap: cc.Node = coinUp.getChildByName('wrap');
-        const anim: cc.Animation = wrap.getComponent(cc.Animation);
-        anim.play();
-        anim.on('finished', e => {
-            Utils.putPoolNode(coinUp, this.coinUpPool);
-        });
-
+        coinUp.getComponent(CoinUp).init(pos, fishType);
     }
+
+    // 创建金币
+    public createGold(pos: cc.Vec2): void {
+        const gold: cc.Node = Utils.getPoolNode(this.goldPool, this.goldPrefab);
+        gold.parent = this.fishLayer;
+        gold.getComponent(Gold).init(pos,cc.v2(-300,-270));
+    }
+
+    public testGameOver(): void {
+        if (Utils.testGameOver()) {
+            this.scheduleOnce(e => {
+                // this.GameOverNode.active = true;
+                cc.director.loadScene('gameOver');
+            }, 0.5);
+        }
+    }
+
 }

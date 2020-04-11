@@ -1,4 +1,5 @@
 import {FishType} from "./Interface";
+import MyGlobal from "./MyGlobal";
 
 // 公共类
 export default class Utils {
@@ -22,52 +23,52 @@ export default class Utils {
         {
             "name": "000",
             "hp": 4,
-            "gold": 4
+            "gold": 2
         },
         {
             "name": "001",
             "hp": 8,
-            "gold": 8
+            "gold": 6
         },
         {
             "name": "002",
             "hp": 12,
-            "gold": 12
+            "gold": 10
         },
         {
             "name": "003",
             "hp": 16,
-            "gold": 16
+            "gold": 13
         },
         {
             "name": "004",
             "hp": 20,
-            "gold": 20
+            "gold": 17
         },
         {
             "name": "005",
             "hp": 24,
-            "gold": 24
+            "gold": 20
         },
         {
             "name": "006",
             "hp": 28,
-            "gold": 28
+            "gold": 22
         },
         {
             "name": "007",
             "hp": 32,
-            "gold": 32
+            "gold": 25
         },
         {
             "name": "008",
             "hp": 36,
-            "gold": 36
+            "gold": 27
         },
         {
             "name": "009",
             "hp": 40,
-            "gold": 40
+            "gold": 30
         },
     ]
 
@@ -93,5 +94,10 @@ export default class Utils {
      */
     public static putPoolNode(node: cc.Node, nodePool: cc.NodePool): void {
         nodePool.put(node);
+    }
+
+    // 检测游戏是否结束
+    public static testGameOver(): boolean {
+        return MyGlobal.hasGold <= 0 && MyGlobal.bulletCount <= 0;
     }
 }

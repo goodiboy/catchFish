@@ -9,7 +9,7 @@ export default class Weapon extends cc.Component {
     protected onLoad(): void {
         cc.director.on(MyEvent.TOUCHEND_SHOOT, e => {
             this.getComponent(cc.Animation).play('weaponLevel' + MyGlobal.weaponLevel);
-        });
+        },this);
     }
 
     // 武器升级

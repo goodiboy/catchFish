@@ -1,4 +1,5 @@
 import {MyEvent} from "../Interface";
+import MyGlobal from "../MyGlobal";
 
 const {ccclass, property} = cc._decorator;
 
@@ -20,7 +21,8 @@ export default class TouchManager extends cc.Component {
 
 
     private _touchStart(e: cc.Event.EventTouch): void {
-        if (Date.now() - this.lastTouchTime < 100) {
+
+        if (Date.now() - this.lastTouchTime < 100 || MyGlobal.hasGold < MyGlobal.weaponLevel) {
             return;
         }
         this.lastTouchTime = Date.now();

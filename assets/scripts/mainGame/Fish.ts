@@ -68,14 +68,12 @@ export default class Fish extends cc.Component {
             this.isLive = false;
             // 停止移动
             this.node.stopAllActions();
-
-            console.log(this.node.getPosition())
-            MyGlobal.GameManager.createCoinUp(this.node.getPosition());
-
+            MyGlobal.GameManager.createCoinUp(this.node.getPosition(), this.fishType);
+            MyGlobal.NumControl.setGoldNum(MyGlobal.hasGold += this.fishType.gold);
             this.anim.play('fishDead' + this.fishType.name);
             this.anim.on('finished', e => {
-                console.log('死亡动画结束');
                 Utils.putPoolNode(this.node, MyGlobal.GameManager.fishPool);
+                MyGlobal.GameManager.createGold(this.node.getPosition());
             })
         }
     }
