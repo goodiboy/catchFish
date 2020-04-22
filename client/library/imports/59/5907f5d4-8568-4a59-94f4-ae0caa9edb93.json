@@ -1,0 +1,35 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "coinUp",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.45,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "y": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.45,
+          "value": 63
+        }
+      ],
+      "opacity": [
+        {
+          "frame": 0.31666666666666665,
+          "value": 255
+        },
+        {
+          "frame": 0.45,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}

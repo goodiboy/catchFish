@@ -1,0 +1,326 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "fish_dead.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "fishDead_001_1": {
+      "__uuid__": "e60a6897-5ebc-4b4f-86de-548a1b65e94c"
+    },
+    "fishDead_001_2": {
+      "__uuid__": "5c804ae4-dc54-44ae-b148-2c3774addf84"
+    },
+    "fishDead_002_1": {
+      "__uuid__": "05ecf03c-a516-4e25-995a-18709a0e191c"
+    },
+    "fishDead_002_2": {
+      "__uuid__": "3ffc9447-d2c4-4e2e-8a94-625847251dad"
+    },
+    "fishDead_003_1": {
+      "__uuid__": "6595f9f5-504a-4991-9056-e1c98ae84e61"
+    },
+    "fishDead_003_2": {
+      "__uuid__": "987ceeac-d21d-4bcf-967f-abdd6cb17acc"
+    },
+    "fishDead_004_1": {
+      "__uuid__": "6e3a70d6-730a-4a40-8cce-d51f6cb178dd"
+    },
+    "fishDead_004_2": {
+      "__uuid__": "665a0ceb-4fea-4df6-abb9-00cf9c3bfbbe"
+    },
+    "fishDead_004_3": {
+      "__uuid__": "098d6760-fa75-469e-894d-91ef03043b98"
+    },
+    "fishDead_005_1": {
+      "__uuid__": "43f46d60-f9e7-40a0-a3b5-b485d820ba3b"
+    },
+    "fishDead_005_2": {
+      "__uuid__": "0a1e84cc-1350-4ba6-8462-804a662a01fd"
+    },
+    "fishDead_005_3": {
+      "__uuid__": "1c568f1a-c3ed-4c99-95df-3372dd5e53d4"
+    },
+    "fishDead_006_1": {
+      "__uuid__": "63a78239-e540-4e19-93f7-5e6ca8c7f4dc"
+    },
+    "fishDead_006_2": {
+      "__uuid__": "c4aee2a0-546e-44de-a29d-ac5f68c38671"
+    },
+    "fishDead_006_3": {
+      "__uuid__": "0c21cd5f-8925-48ca-91ff-27cab7db5b5c"
+    },
+    "fishDead_007_1": {
+      "__uuid__": "9961d0c5-ebf6-472f-9795-d8cd1ec70e43"
+    },
+    "fishDead_007_2": {
+      "__uuid__": "a133edc4-343b-4af6-8a2a-da5496b737a9"
+    },
+    "fishDead_007_3": {
+      "__uuid__": "11f4092e-5b0c-4c89-8050-08c2cc3c4c13"
+    },
+    "fishDead_007_4": {
+      "__uuid__": "b0668891-7461-49d4-91fc-17e909b04733"
+    },
+    "fishDead_007_5": {
+      "__uuid__": "90089478-657c-47cd-838f-48926823f798"
+    },
+    "fishDead_007_6": {
+      "__uuid__": "f95986b6-86b4-4494-8a8c-af0f2b919b4e"
+    },
+    "fishDead_008_1": {
+      "__uuid__": "46332a7d-1ed6-4d32-98ad-112f471329e8"
+    },
+    "fishDead_008_2": {
+      "__uuid__": "6521515a-95f3-43f1-b55e-a3b31d330a9d"
+    },
+    "fishDead_008_3": {
+      "__uuid__": "8103a079-5367-4c4a-991c-b271484a964e"
+    },
+    "fishDead_009_1": {
+      "__uuid__": "0aad2e5a-f629-41d5-9f99-697ff07b19bc"
+    },
+    "fishDead_009_2": {
+      "__uuid__": "8c00b9e4-172b-4f7f-9db3-81cdbb3b359c"
+    },
+    "fishDead_010_1": {
+      "__uuid__": "9ae51b30-63eb-44f0-a6c1-043bb443983e"
+    },
+    "fishDead_010_2": {
+      "__uuid__": "a30d6d59-85c9-4145-9377-5f311c4fcb79"
+    },
+    "fishDead_010_3": {
+      "__uuid__": "1bf45025-2f3a-4035-be7c-73eb7be2f74c"
+    },
+    "fishDead_010_4": {
+      "__uuid__": "805bdf8d-81eb-4075-b3cb-72f830faa7ba"
+    },
+    "fishDead_010_5": {
+      "__uuid__": "493f0c53-e009-4665-9575-b28f8800c790"
+    },
+    "fishDead_010_6": {
+      "__uuid__": "32debd09-cc98-41c6-85d3-f0eaa38e3106"
+    },
+    "fishDead_011_1": {
+      "__uuid__": "b9630c46-8221-47e9-afe2-1768ff6095d0"
+    },
+    "fishDead_011_2": {
+      "__uuid__": "f834a8e9-11c8-4c0f-9313-1f2181c1cce2"
+    },
+    "fishDead_011_3": {
+      "__uuid__": "690cfc63-710f-4e6e-aec4-75a867c88418"
+    },
+    "fishDead_011_4": {
+      "__uuid__": "df2fcc7d-67a3-47bf-8b3f-e2dde95b0f4e"
+    },
+    "fishDead_012_1": {
+      "__uuid__": "c20d0a4b-dcc0-4664-bebe-7c5b430e7ea5"
+    },
+    "fishDead_012_2": {
+      "__uuid__": "b9e89217-a121-436d-acf8-0b0a8e372d41"
+    },
+    "fishDead_012_3": {
+      "__uuid__": "06d99dba-ec7f-4024-a7af-424c87fc3f5b"
+    },
+    "fishDead_013_1": {
+      "__uuid__": "5e12ff9d-b2b7-4c52-9628-18ceb92a91d6"
+    },
+    "fishDead_013_2": {
+      "__uuid__": "699887c3-7bb0-44d1-99cd-c31bda123c1b"
+    },
+    "fishDead_013_3": {
+      "__uuid__": "a2cdfabb-3bcd-4ace-a968-641457db19ac"
+    },
+    "fishDead_014_1": {
+      "__uuid__": "61c9871f-3452-48e3-a038-329b3bd8d453"
+    },
+    "fishDead_014_2": {
+      "__uuid__": "99f6d26b-a48a-46ff-bfa9-fa1d6a24a10e"
+    },
+    "fishDead_014_3": {
+      "__uuid__": "0c2a0c70-a556-4b29-b61e-a0d373e23e64"
+    },
+    "fishDead_015_1": {
+      "__uuid__": "cb4a30c4-c9c2-4a01-995c-bce9159caedf"
+    },
+    "fishDead_015_2": {
+      "__uuid__": "735537ad-09e7-47d6-bd3c-04bef941192a"
+    },
+    "fishDead_015_3": {
+      "__uuid__": "7caba596-e3c1-43cc-8038-b9815d2d6d17"
+    },
+    "fishDead_016_1": {
+      "__uuid__": "761153a4-508b-4aa5-b4c4-5d74b787522d"
+    },
+    "fishDead_016_2": {
+      "__uuid__": "cd30ee17-756d-4b1e-8c5f-7ec5578c75b1"
+    },
+    "fishDead_016_3": {
+      "__uuid__": "8835a4cf-3a52-4f77-ae8d-d119c69478d8"
+    },
+    "fishDead_017_1": {
+      "__uuid__": "eb5cc229-eb19-489c-b050-3dc94170629e"
+    },
+    "fishDead_017_2": {
+      "__uuid__": "989100d6-817f-43c5-8c64-6ff6b29f7b3c"
+    },
+    "fishDead_017_3": {
+      "__uuid__": "7b092977-6052-4acd-b424-7347a5b0328e"
+    },
+    "fishDead_018_1": {
+      "__uuid__": "b94bd37c-efd3-44df-9f3c-a5924a76ebd7"
+    },
+    "fishDead_018_2": {
+      "__uuid__": "40d8790c-1b9f-43f8-980c-dd08adbc0040"
+    },
+    "fishDead_018_3": {
+      "__uuid__": "8f41ad0e-5818-4bea-be5d-73ba43df67d0"
+    },
+    "fishDead_019_1": {
+      "__uuid__": "b62ef659-8789-4f94-9b0f-1693494baecd"
+    },
+    "fishDead_019_2": {
+      "__uuid__": "00a272d8-d1c9-4252-a8df-e718e42d6d8a"
+    },
+    "fishDead_019_3": {
+      "__uuid__": "215264a9-2220-406e-8b56-9c754fded11d"
+    },
+    "fishDead_019_4": {
+      "__uuid__": "4ecf376c-176f-4ba4-b3f1-5edc918ed101"
+    },
+    "fishDead_019_5": {
+      "__uuid__": "222fa59f-2515-4c9b-bd62-0c7c0a37ac76"
+    },
+    "fishDead_019_6": {
+      "__uuid__": "a13e4dea-1260-4662-a821-ef79fd53f837"
+    },
+    "fishDead_019_7": {
+      "__uuid__": "7bd1b63f-9d02-493c-9845-9396062f4c6b"
+    },
+    "fishDead_019_8": {
+      "__uuid__": "02dcf2f7-fa8c-4f1e-952e-82c968f1ef2f"
+    },
+    "fishDead_020_1": {
+      "__uuid__": "d255cfae-b1e9-4687-b30e-cee113e59983"
+    },
+    "fishDead_020_10": {
+      "__uuid__": "0cdb822a-6dc3-4f92-96ce-6dda7ba8b8cc"
+    },
+    "fishDead_020_11": {
+      "__uuid__": "a530b3fd-cf96-47a8-8418-37530ce04f02"
+    },
+    "fishDead_020_12": {
+      "__uuid__": "04760fef-9b65-4780-95df-68ab1cfe3886"
+    },
+    "fishDead_020_13": {
+      "__uuid__": "e38b3d5a-6ae7-409c-a394-58c63eee2a0a"
+    },
+    "fishDead_020_14": {
+      "__uuid__": "23a73f19-56d1-4487-875a-dc09ed2a47b5"
+    },
+    "fishDead_020_15": {
+      "__uuid__": "a1414837-a295-4c05-aaf3-953fab37b8a2"
+    },
+    "fishDead_020_16": {
+      "__uuid__": "6c15d13f-59c9-44ff-becf-cec53e80b7ef"
+    },
+    "fishDead_020_17": {
+      "__uuid__": "f336df3f-0d46-43d4-b6b4-dca1177bd71d"
+    },
+    "fishDead_020_18": {
+      "__uuid__": "a591090f-9969-4932-ac79-c893b8ce2dbd"
+    },
+    "fishDead_020_19": {
+      "__uuid__": "5bfe50e5-9b50-49c8-95ec-fa829358622f"
+    },
+    "fishDead_020_2": {
+      "__uuid__": "0253aa29-f56c-4243-9419-aba20f55b9ed"
+    },
+    "fishDead_020_20": {
+      "__uuid__": "0400ebec-cad4-4e7c-87bc-700cebc4bfa7"
+    },
+    "fishDead_020_3": {
+      "__uuid__": "1eeb68ac-8b0f-47bf-aad2-221df5cd534e"
+    },
+    "fishDead_020_4": {
+      "__uuid__": "f30aade4-1931-4f06-8064-f5802c1e89b6"
+    },
+    "fishDead_020_5": {
+      "__uuid__": "d7e39eb4-fcaf-4740-a413-4a9d2925ebef"
+    },
+    "fishDead_020_6": {
+      "__uuid__": "023f5a81-64ee-410f-8a0c-34d182dd7040"
+    },
+    "fishDead_020_7": {
+      "__uuid__": "b24125a5-d03c-48b6-af73-91a77f654777"
+    },
+    "fishDead_020_8": {
+      "__uuid__": "7c358918-d179-4c34-842b-be1ca2812938"
+    },
+    "fishDead_020_9": {
+      "__uuid__": "c402c368-95bd-4d47-8aa7-ecebcba866b8"
+    },
+    "fishDead_021_1": {
+      "__uuid__": "3c3bd9f2-c8c8-448b-8d2f-3c7a000ef331"
+    },
+    "fishDead_021_2": {
+      "__uuid__": "b6555d17-e1a4-4380-836c-0ce8d4851137"
+    },
+    "fishDead_021_3": {
+      "__uuid__": "7986017c-46a8-4df3-ae17-13d6ece5e6b1"
+    },
+    "fishDead_021_4": {
+      "__uuid__": "85254a1c-272e-46b6-bc11-93c4a44bb106"
+    },
+    "fishDead_021_5": {
+      "__uuid__": "7f91b188-bcd2-4296-aa45-353ffed9b234"
+    },
+    "fishDead_021_6": {
+      "__uuid__": "31cd8353-7892-4e91-acac-67b7b2b51cf5"
+    },
+    "fishDead_021_7": {
+      "__uuid__": "976923b8-861b-43d6-a541-39f1ffda6f2b"
+    },
+    "fishDead_021_8": {
+      "__uuid__": "b4b76b53-bc14-4323-a28a-6c5fb8680603"
+    },
+    "fishDead_021_9": {
+      "__uuid__": "6f490161-83fb-4e14-96fc-267cd180b583"
+    },
+    "fishDead_025_1": {
+      "__uuid__": "249b732f-f943-45a1-8396-a03a09abcd4d"
+    },
+    "fishDead_025_10": {
+      "__uuid__": "a0df6e80-30eb-4472-b496-07665c3a1b9a"
+    },
+    "fishDead_025_11": {
+      "__uuid__": "3e2be1d7-2a14-400e-8027-a61105d06386"
+    },
+    "fishDead_025_12": {
+      "__uuid__": "90d6d010-bc1a-4a68-8027-f8b7188a0103"
+    },
+    "fishDead_025_2": {
+      "__uuid__": "6869b7e0-161c-44dd-9cfd-260eb651ad90"
+    },
+    "fishDead_025_3": {
+      "__uuid__": "df2b5d11-1fb2-496c-9f13-3c4e241abc0e"
+    },
+    "fishDead_025_4": {
+      "__uuid__": "0f0adfd9-cae0-49ea-9264-8e30a13f36e7"
+    },
+    "fishDead_025_5": {
+      "__uuid__": "79ac4176-5250-43d9-b86a-5c09e2c8e900"
+    },
+    "fishDead_025_6": {
+      "__uuid__": "2fb1b774-d240-40c0-938e-c2b6ae7e7042"
+    },
+    "fishDead_025_7": {
+      "__uuid__": "5607bf91-0a19-4600-bdbd-213d591be6ca"
+    },
+    "fishDead_025_8": {
+      "__uuid__": "930c3f65-1e22-4e7d-a942-59c5981764fb"
+    },
+    "fishDead_025_9": {
+      "__uuid__": "fafe81f3-826f-4770-ac39-ba76a7768440"
+    }
+  }
+}

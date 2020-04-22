@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "fishDead_020_5",
+    "texture": "b69ccf05-6565-4e96-8ef4-0dfe55e6227c",
+    "atlas": "a587b005-a64b-4ffb-bbd5-5f9def23730a",
+    "rect": [
+      2996,
+      2,
+      384,
+      384
+    ],
+    "offset": [
+      -1,
+      24
+    ],
+    "originalSize": [
+      500,
+      500
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

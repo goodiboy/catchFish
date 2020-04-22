@@ -1,0 +1,161 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "texture.plist",
+  "_objFlags": 0,
+  "_native": "",
+  "_spriteFrames": {
+    "bottomBar": {
+      "__uuid__": "5de2d847-65fb-496d-89b0-cd53e605f40a"
+    },
+    "bullet1": {
+      "__uuid__": "3753680f-852d-40ae-8fc1-c2f97c0f3e7f"
+    },
+    "bullet2": {
+      "__uuid__": "098177d4-2481-436e-a2e2-ca81f4a6bd6a"
+    },
+    "bullet3": {
+      "__uuid__": "77854c10-a7a2-439e-8b36-2b1cde7409ea"
+    },
+    "bullet4": {
+      "__uuid__": "6f8c23b2-9daa-471c-992d-6f83182dec04"
+    },
+    "bullet5": {
+      "__uuid__": "c029fe51-c436-47bb-8416-e3fe302f3c61"
+    },
+    "bullet6": {
+      "__uuid__": "63c4178c-a676-4f34-a1da-fac9331e76b0"
+    },
+    "bullet7": {
+      "__uuid__": "1c047569-c945-44fc-94ff-e1194fb9e3e6"
+    },
+    "bullet8": {
+      "__uuid__": "d066a285-d2a1-460e-81d7-4825c22d077b"
+    },
+    "cannonMinus": {
+      "__uuid__": "6da60440-6454-4c3f-95c9-ae0dc88d37c3"
+    },
+    "cannonMinusDown": {
+      "__uuid__": "ef4f7a68-c309-415e-bdf9-a6c7f17bbc02"
+    },
+    "cannonPlus": {
+      "__uuid__": "4c5d9693-b9ca-4721-9ab0-8501c31f4d37"
+    },
+    "cannonPlusDown": {
+      "__uuid__": "2f8a0d4e-6a60-49f2-a1a6-7d249447dbd0"
+    },
+    "net_1": {
+      "__uuid__": "69ad394b-3e1f-4867-b273-faadce35eccc"
+    },
+    "net_2": {
+      "__uuid__": "46fbe8b9-704b-4376-8b87-7ffda038b3c8"
+    },
+    "net_3": {
+      "__uuid__": "5929aa44-3210-46a3-9a38-f4bd5e667291"
+    },
+    "net_4": {
+      "__uuid__": "466baf84-60db-4f15-a93b-8524d621a9b5"
+    },
+    "textures_81": {
+      "__uuid__": "c59e2cec-4fb6-4b79-8565-d376f37a8ca7"
+    },
+    "weapon_level_1_1": {
+      "__uuid__": "1349c86e-0375-4840-8721-aebb1e0667f2"
+    },
+    "weapon_level_1_2": {
+      "__uuid__": "a700d270-d94d-4c3a-b035-fbff79c9ed12"
+    },
+    "weapon_level_1_3": {
+      "__uuid__": "1a552b20-8264-467c-a024-ab96d64fb2ed"
+    },
+    "weapon_level_2_1": {
+      "__uuid__": "041851e3-8785-4480-877f-572fadd87ffb"
+    },
+    "weapon_level_2_2": {
+      "__uuid__": "dfe6e11a-1ac7-469b-92e3-14b04d03affc"
+    },
+    "weapon_level_2_3": {
+      "__uuid__": "475e79e5-d755-43d4-bf17-a862c5484712"
+    },
+    "weapon_level_2_4": {
+      "__uuid__": "7ee03182-f1b0-4faa-8f7f-3963d622a3b6"
+    },
+    "weapon_level_2_5": {
+      "__uuid__": "09bd245e-9508-4b7a-97dc-d97defd3ae42"
+    },
+    "weapon_level_3_1": {
+      "__uuid__": "e4ce6802-955e-43e6-b393-af544d256c16"
+    },
+    "weapon_level_3_2": {
+      "__uuid__": "b4564037-1571-424c-84ca-9537fe27d050"
+    },
+    "weapon_level_3_3": {
+      "__uuid__": "90eea569-9fcf-45f2-997a-6b091d6c8a02"
+    },
+    "weapon_level_3_4": {
+      "__uuid__": "0f89760f-5b30-4188-9a1c-cbd8029c0448"
+    },
+    "weapon_level_3_5": {
+      "__uuid__": "f25d7f08-9e7a-4521-9ea1-cdca08a09a08"
+    },
+    "weapon_level_4_1": {
+      "__uuid__": "cb4b2880-71d6-4e0a-a1b1-23e5ed2ab66d"
+    },
+    "weapon_level_4_2": {
+      "__uuid__": "59d948d7-16c6-4037-b1c5-eaf9c29f0214"
+    },
+    "weapon_level_4_3": {
+      "__uuid__": "74cd2703-306c-4c6f-978a-13f09fa33308"
+    },
+    "weapon_level_4_4": {
+      "__uuid__": "c9c59db7-e99b-4c37-a4c9-3e75b192e36e"
+    },
+    "weapon_level_4_5": {
+      "__uuid__": "be25df85-a4cf-475d-a800-178fbe31289f"
+    },
+    "weapon_level_5_1": {
+      "__uuid__": "47b7ecf0-5edd-44ac-ae51-b8478ea1e7d5"
+    },
+    "weapon_level_5_2": {
+      "__uuid__": "67d0771c-8931-4156-95a4-1a928141467f"
+    },
+    "weapon_level_5_3": {
+      "__uuid__": "2eea564e-2cf1-4398-8dc0-05db5a6091fd"
+    },
+    "weapon_level_5_4": {
+      "__uuid__": "0e69828b-1394-434a-9426-8f616daafc1f"
+    },
+    "weapon_level_5_5": {
+      "__uuid__": "1f93c3af-8308-49f7-8c22-4fd30f3c925e"
+    },
+    "weapon_level_6_1": {
+      "__uuid__": "43c5ccb5-6b82-43a4-9c82-98ea7dc4d8d0"
+    },
+    "weapon_level_6_2": {
+      "__uuid__": "4bc5bd11-eac6-49b2-a61a-0574e19e99b0"
+    },
+    "weapon_level_6_3": {
+      "__uuid__": "7c5fcb72-7553-4b80-a738-93617b958fe0"
+    },
+    "weapon_level_6_4": {
+      "__uuid__": "3c4ace63-e0fc-4c5e-addd-f57a49f5472b"
+    },
+    "weapon_level_6_5": {
+      "__uuid__": "ca051508-9369-4036-ada4-4547c6063154"
+    },
+    "weapon_level_7_1": {
+      "__uuid__": "570b4e56-9a52-4978-a699-a243e1fc13a6"
+    },
+    "weapon_level_7_2": {
+      "__uuid__": "c2f0c28e-d6e8-4344-98ff-54b41e100fa8"
+    },
+    "weapon_level_7_3": {
+      "__uuid__": "81fd6a1b-42eb-46c2-9ca7-a821ccef8c8a"
+    },
+    "weapon_level_7_4": {
+      "__uuid__": "54abf520-06cb-4707-b247-36fd15323d14"
+    },
+    "weapon_level_7_5": {
+      "__uuid__": "53ec7d04-9a3a-4caf-b8f8-cf58edb814e2"
+    }
+  }
+}

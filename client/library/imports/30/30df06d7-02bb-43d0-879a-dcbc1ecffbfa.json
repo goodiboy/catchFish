@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "alp",
+    "texture": "511039ed-841f-4aa2-a63c-50ea4ac8adb0",
+    "atlas": "a64c76e0-8d24-4f1b-92fe-7f6d1b781bff",
+    "rect": [
+      1974,
+      2,
+      1,
+      1
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1,
+      1
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

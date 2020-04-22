@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "weapon_level_2_3",
+    "texture": "8b14a25f-c80b-4df5-b460-e3b9f53a2a93",
+    "atlas": "7f3bb2dc-4d90-4ae3-bdb1-3f2380a76cf3",
+    "rect": [
+      1128,
+      1,
+      56,
+      69
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      56,
+      69
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
