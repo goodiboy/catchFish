@@ -1,5 +1,5 @@
-export function account_server() {
-    return {
-        port: 8080
-    }
+const accountConfig = {
+    port: 8080
 }
+
+export {accountConfig};

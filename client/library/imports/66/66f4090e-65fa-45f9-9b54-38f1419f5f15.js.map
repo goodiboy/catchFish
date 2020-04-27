@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/scripts/config/config.ts"],"names":[],"mappings":";;;;;;AAAA,IAAM,MAAM,GAAG;IACX,MAAM,EAAE,uBAAuB;CAClC,CAAA;AAEO,wBAAM","file":"","sourceRoot":"/","sourcesContent":["const config = {\n    reqUrl: 'http://127.0.0.1:8080'\n}\n\nexport {config}"]}

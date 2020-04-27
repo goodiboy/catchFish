@@ -23,15 +23,49 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var axios_1 = require("axios");
+var config_1 = require("../config/config");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var StartBtn = /** @class */ (function (_super) {
     __extends(StartBtn, _super);
     function StartBtn() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.username = null;
+        _this.password = null;
+        return _this;
     }
-    StartBtn.prototype.onClick = function () {
-        cc.director.loadScene('mainGame');
+    StartBtn.prototype.onLoad = function () {
+        cc.view.setOrientation(cc.macro.ORIENTATION_LANDSCAPE);
     };
+    StartBtn.prototype.onClick = function () {
+        // cc.director.loadScene('mainGame');
+        console.log(111);
+        console.log(this.username.string);
+        console.log(this.password.string);
+        // axios.get('http://127.0.0.1:8080/login', {
+        //     params: {
+        //         username: 'aaa',
+        //         password: 123
+        //     }
+        // }).then(res => {
+        //     console.log(res);
+        // })
+        axios_1.default.post(config_1.config.reqUrl + '/login', {
+            username: this.username.string,
+            password: this.password.string
+        }).then(function (res) {
+            console.log(res);
+            if (res.data.errcode === 0) {
+                cc.director.loadScene('mainGame');
+            }
+        });
+    };
+    __decorate([
+        property(cc.EditBox)
+    ], StartBtn.prototype, "username", void 0);
+    __decorate([
+        property(cc.EditBox)
+    ], StartBtn.prototype, "password", void 0);
     StartBtn = __decorate([
         ccclass
     ], StartBtn);

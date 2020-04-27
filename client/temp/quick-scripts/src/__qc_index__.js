@@ -2,6 +2,7 @@
 require('./assets/scripts/Interface');
 require('./assets/scripts/MyGlobal');
 require('./assets/scripts/Utils');
+require('./assets/scripts/config/config');
 require('./assets/scripts/mainGame/Bullet');
 require('./assets/scripts/mainGame/CoinUp');
 require('./assets/scripts/mainGame/Fish');

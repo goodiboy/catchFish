@@ -34,15 +34,49 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var axios_1 = require("axios");
+var config_1 = require("../config/config");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var StartBtn = /** @class */ (function (_super) {
     __extends(StartBtn, _super);
     function StartBtn() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.username = null;
+        _this.password = null;
+        return _this;
     }
-    StartBtn.prototype.onClick = function () {
-        cc.director.loadScene('mainGame');
+    StartBtn.prototype.onLoad = function () {
+        cc.view.setOrientation(cc.macro.ORIENTATION_LANDSCAPE);
     };
+    StartBtn.prototype.onClick = function () {
+        // cc.director.loadScene('mainGame');
+        console.log(111);
+        console.log(this.username.string);
+        console.log(this.password.string);
+        // axios.get('http://127.0.0.1:8080/login', {
+        //     params: {
+        //         username: 'aaa',
+        //         password: 123
+        //     }
+        // }).then(res => {
+        //     console.log(res);
+        // })
+        axios_1.default.post(config_1.config.reqUrl + '/login', {
+            username: this.username.string,
+            password: this.password.string
+        }).then(function (res) {
+            console.log(res);
+            if (res.data.errcode === 0) {
+                cc.director.loadScene('mainGame');
+            }
+        });
+    };
+    __decorate([
+        property(cc.EditBox)
+    ], StartBtn.prototype, "username", void 0);
+    __decorate([
+        property(cc.EditBox)
+    ], StartBtn.prototype, "password", void 0);
     StartBtn = __decorate([
         ccclass
     ], StartBtn);
@@ -61,4 +95,4 @@ cc._RF.pop();
                         });
                     }
                 })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9zY3JpcHRzL3N0YXJ0R2FtZS9TdGFydEJ0bi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBTSxJQUFBLGtCQUFtQyxFQUFsQyxvQkFBTyxFQUFFLHNCQUF5QixDQUFDO0FBRzFDO0lBQXNDLDRCQUFZO0lBQWxEOztJQUtBLENBQUM7SUFIVSwwQkFBTyxHQUFkO1FBQ0ksRUFBRSxDQUFDLFFBQVEsQ0FBQyxTQUFTLENBQUMsVUFBVSxDQUFDLENBQUM7SUFDdEMsQ0FBQztJQUpnQixRQUFRO1FBRDVCLE9BQU87T0FDYSxRQUFRLENBSzVCO0lBQUQsZUFBQztDQUxELEFBS0MsQ0FMcUMsRUFBRSxDQUFDLFNBQVMsR0FLakQ7a0JBTG9CLFFBQVEiLCJmaWxlIjoiIiwic291cmNlUm9vdCI6Ii8iLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCB7Y2NjbGFzcywgcHJvcGVydHl9ID0gY2MuX2RlY29yYXRvcjtcblxuQGNjY2xhc3NcbmV4cG9ydCBkZWZhdWx0IGNsYXNzIFN0YXJ0QnRuIGV4dGVuZHMgY2MuQ29tcG9uZW50IHtcblxuICAgIHB1YmxpYyBvbkNsaWNrKCk6IHZvaWQge1xuICAgICAgICBjYy5kaXJlY3Rvci5sb2FkU2NlbmUoJ21haW5HYW1lJyk7XG4gICAgfVxufVxuIl19
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9zY3JpcHRzL3N0YXJ0R2FtZS9TdGFydEJ0bi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSwrQkFBMEI7QUFDMUIsMkNBQXVDO0FBRWpDLElBQUEsa0JBQW1DLEVBQWxDLG9CQUFPLEVBQUUsc0JBQXlCLENBQUM7QUFHMUM7SUFBc0MsNEJBQVk7SUFEbEQ7UUFBQSxxRUF1Q0M7UUFuQ0csY0FBUSxHQUFlLElBQUksQ0FBQztRQUc1QixjQUFRLEdBQWUsSUFBSSxDQUFDOztJQWdDaEMsQ0FBQztJQTlCYSx5QkFBTSxHQUFoQjtRQUNJLEVBQUUsQ0FBQyxJQUFJLENBQUMsY0FBYyxDQUFDLEVBQUUsQ0FBQyxLQUFLLENBQUMscUJBQXFCLENBQUMsQ0FBQTtJQUMxRCxDQUFDO0lBRU0sMEJBQU8sR0FBZDtRQUNJLHFDQUFxQztRQUNyQyxPQUFPLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFDO1FBRWpCLE9BQU8sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLFFBQVEsQ0FBQyxNQUFNLENBQUMsQ0FBQTtRQUNqQyxPQUFPLENBQUMsR0FBRyxDQUFDLElBQUksQ0FBQyxRQUFRLENBQUMsTUFBTSxDQUFDLENBQUE7UUFFakMsNkNBQTZDO1FBQzdDLGdCQUFnQjtRQUNoQiwyQkFBMkI7UUFDM0Isd0JBQXdCO1FBQ3hCLFFBQVE7UUFDUixtQkFBbUI7UUFDbkIsd0JBQXdCO1FBQ3hCLEtBQUs7UUFFTCxlQUFLLENBQUMsSUFBSSxDQUFDLGVBQU0sQ0FBQyxNQUFNLEdBQUcsUUFBUSxFQUFFO1lBQ2pDLFFBQVEsRUFBRSxJQUFJLENBQUMsUUFBUSxDQUFDLE1BQU07WUFDOUIsUUFBUSxFQUFFLElBQUksQ0FBQyxRQUFRLENBQUMsTUFBTTtTQUNqQyxDQUFDLENBQUMsSUFBSSxDQUFDLFVBQUEsR0FBRztZQUNQLE9BQU8sQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUM7WUFDakIsSUFBSSxHQUFHLENBQUMsSUFBSSxDQUFDLE9BQU8sS0FBSyxDQUFDLEVBQUM7Z0JBQ3ZCLEVBQUUsQ0FBQyxRQUFRLENBQUMsU0FBUyxDQUFDLFVBQVUsQ0FBQyxDQUFDO2FBQ3JDO1FBQ0wsQ0FBQyxDQUFDLENBQUE7SUFDTixDQUFDO0lBbENEO1FBREMsUUFBUSxDQUFDLEVBQUUsQ0FBQyxPQUFPLENBQUM7OENBQ087SUFHNUI7UUFEQyxRQUFRLENBQUMsRUFBRSxDQUFDLE9BQU8sQ0FBQzs4Q0FDTztJQU5YLFFBQVE7UUFENUIsT0FBTztPQUNhLFFBQVEsQ0FzQzVCO0lBQUQsZUFBQztDQXRDRCxBQXNDQyxDQXRDcUMsRUFBRSxDQUFDLFNBQVMsR0FzQ2pEO2tCQXRDb0IsUUFBUSIsImZpbGUiOiIiLCJzb3VyY2VSb290IjoiLyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBheGlvcyBmcm9tICdheGlvcyc7XG5pbXBvcnQge2NvbmZpZ30gZnJvbSAnLi4vY29uZmlnL2NvbmZpZydcblxuY29uc3Qge2NjY2xhc3MsIHByb3BlcnR5fSA9IGNjLl9kZWNvcmF0b3I7XG5cbkBjY2NsYXNzXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBTdGFydEJ0biBleHRlbmRzIGNjLkNvbXBvbmVudCB7XG5cbiAgICBAcHJvcGVydHkoY2MuRWRpdEJveClcbiAgICB1c2VybmFtZTogY2MuRWRpdEJveCA9IG51bGw7XG5cbiAgICBAcHJvcGVydHkoY2MuRWRpdEJveClcbiAgICBwYXNzd29yZDogY2MuRWRpdEJveCA9IG51bGw7XG5cbiAgICBwcm90ZWN0ZWQgb25Mb2FkKCk6IHZvaWQge1xuICAgICAgICBjYy52aWV3LnNldE9yaWVudGF0aW9uKGNjLm1hY3JvLk9SSUVOVEFUSU9OX0xBTkRTQ0FQRSlcbiAgICB9XG5cbiAgICBwdWJsaWMgb25DbGljaygpOiB2b2lkIHtcbiAgICAgICAgLy8gY2MuZGlyZWN0b3IubG9hZFNjZW5lKCdtYWluR2FtZScpO1xuICAgICAgICBjb25zb2xlLmxvZygxMTEpO1xuXG4gICAgICAgIGNvbnNvbGUubG9nKHRoaXMudXNlcm5hbWUuc3RyaW5nKVxuICAgICAgICBjb25zb2xlLmxvZyh0aGlzLnBhc3N3b3JkLnN0cmluZylcblxuICAgICAgICAvLyBheGlvcy5nZXQoJ2h0dHA6Ly8xMjcuMC4wLjE6ODA4MC9sb2dpbicsIHtcbiAgICAgICAgLy8gICAgIHBhcmFtczoge1xuICAgICAgICAvLyAgICAgICAgIHVzZXJuYW1lOiAnYWFhJyxcbiAgICAgICAgLy8gICAgICAgICBwYXNzd29yZDogMTIzXG4gICAgICAgIC8vICAgICB9XG4gICAgICAgIC8vIH0pLnRoZW4ocmVzID0+IHtcbiAgICAgICAgLy8gICAgIGNvbnNvbGUubG9nKHJlcyk7XG4gICAgICAgIC8vIH0pXG5cbiAgICAgICAgYXhpb3MucG9zdChjb25maWcucmVxVXJsICsgJy9sb2dpbicsIHtcbiAgICAgICAgICAgIHVzZXJuYW1lOiB0aGlzLnVzZXJuYW1lLnN0cmluZyxcbiAgICAgICAgICAgIHBhc3N3b3JkOiB0aGlzLnBhc3N3b3JkLnN0cmluZ1xuICAgICAgICB9KS50aGVuKHJlcyA9PiB7XG4gICAgICAgICAgICBjb25zb2xlLmxvZyhyZXMpO1xuICAgICAgICAgICAgaWYgKHJlcy5kYXRhLmVycmNvZGUgPT09IDApe1xuICAgICAgICAgICAgICAgIGNjLmRpcmVjdG9yLmxvYWRTY2VuZSgnbWFpbkdhbWUnKTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfSlcbiAgICB9XG59XG4iXX0=
